@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "38f49a5f00fd2d80bee1",
+    "revision": "139c0ded1bee366817a7",
     "url": "/pocketreader/static/css/main.4f7c0a85.chunk.css"
   },
   {
-    "revision": "38f49a5f00fd2d80bee1",
-    "url": "/pocketreader/static/js/main.38f49a5f.chunk.js"
+    "revision": "139c0ded1bee366817a7",
+    "url": "/pocketreader/static/js/main.139c0ded.chunk.js"
   },
   {
     "revision": "71f1a2545e582d3d7565",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/pocketreader/static/media/logo.72ffe8d4.png"
   },
   {
-    "revision": "4fe19aac180d2f5433769165680570a8",
+    "revision": "1dd0ea0829b71d1a52a6f9fca7107a43",
     "url": "/pocketreader/index.html"
   }
 ];

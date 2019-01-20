@@ -1,28 +1,53 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from './logo.png';
+import { Table } from 'reactstrap';
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+    constructor(props) {
+        super(props);
+        this.state = {
+            data: [],
+        };
+    }
+
+    async componentDidMount() {
+        const url = 'https://ghibliapi.herokuapp.com/films';
+        try {
+            const response = await fetch(url);
+            if (!response.ok) {
+                throw Error(response.statusText);
+            }
+            const json = await response.json();
+            this.setState({ data: json });
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+    render() {
+        const { data } = this.state;
+        const rows = data.map((row, index) => {
+            return (
+                <tr key={index}>
+                  <td>{row.title}</td>
+                  <td>{row.description.substring(0, 150)}</td>
+                </tr>
+            );
+        });
+        return (
+            <div>
+              <Table>
+                <thead>
+                  <tr key="-1">
+                    <td>Title</td>
+                    <td>Description</td>
+                  </tr>
+                </thead>
+                <tbody>{rows}</tbody>
+              </Table>
+            </div>
+        );
+    }
 }
 
 export default App;

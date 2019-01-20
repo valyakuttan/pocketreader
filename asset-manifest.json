@@ -1,7 +1,7 @@
 {
   "main.css": "/pocketreader/static/css/main.4f7c0a85.chunk.css",
-  "main.js": "/pocketreader/static/js/main.0fe0e9aa.chunk.js",
-  "main.js.map": "/pocketreader/static/js/main.0fe0e9aa.chunk.js.map",
+  "main.js": "/pocketreader/static/js/main.2f8d625e.chunk.js",
+  "main.js.map": "/pocketreader/static/js/main.2f8d625e.chunk.js.map",
   "static/js/1.71f1a254.chunk.js": "/pocketreader/static/js/1.71f1a254.chunk.js",
   "static/js/1.71f1a254.chunk.js.map": "/pocketreader/static/js/1.71f1a254.chunk.js.map",
   "runtime~main.js": "/pocketreader/static/js/runtime~main.618e4d44.js",
@@ -9,6 +9,6 @@
   "static/media/logo.png": "/pocketreader/static/media/logo.72ffe8d4.png",
   "static/css/main.4f7c0a85.chunk.css.map": "/pocketreader/static/css/main.4f7c0a85.chunk.css.map",
   "index.html": "/pocketreader/index.html",
-  "precache-manifest.371f25d06cdad61645ab3137d020d676.js": "/pocketreader/precache-manifest.371f25d06cdad61645ab3137d020d676.js",
+  "precache-manifest.cae97a6c0ea9e6483cfe1ca9d8ae7687.js": "/pocketreader/precache-manifest.cae97a6c0ea9e6483cfe1ca9d8ae7687.js",
   "service-worker.js": "/pocketreader/service-worker.js"
 }
